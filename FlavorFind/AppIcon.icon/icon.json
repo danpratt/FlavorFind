@@ -1,0 +1,77 @@
+{
+  "fill" : {
+    "linear-gradient" : [
+      "display-p3:0.46395,0.53978,1.00000,1.00000",
+      "display-p3:0.26947,0.85191,1.00000,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "blur-material" : null,
+      "hidden" : false,
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "solid" : "display-p3:0.92288,0.92216,0.96783,1.00000"
+          },
+          "image-name" : "2_onigiri.svg",
+          "name" : "2_onigiri",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              4.453125,
+              -3.734375
+            ]
+          }
+        }
+      ],
+      "lighting" : "individual",
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.5
+      },
+      "specular" : false,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "blur-material" : null,
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "automatic-gradient" : "display-p3:0.87502,0.68746,0.62853,1.00000"
+          },
+          "glass" : true,
+          "image-name" : "1_onigiri.svg",
+          "name" : "1_onigiri",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              6.71875,
+              169.296875
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.5
+      },
+      "specular" : false,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
