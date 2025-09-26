@@ -38,4 +38,24 @@ final class FlavorFindUITests: XCTestCase {
             XCUIApplication().launch()
         }
     }
+    
+    @MainActor
+    func testNavigationToDetailView() {
+        let app = XCUIApplication()
+        app.activate()
+        app/*@START_MENU_TOKEN@*/.staticTexts["Tandoori chicken"]/*[[".otherElements.staticTexts[\"Tandoori chicken\"]",".staticTexts[\"Tandoori chicken\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.firstMatch.tap()
+        
+        let ingredientsHeader = app.navigationBars["Tandoori chicken"]
+        XCTAssertTrue(ingredientsHeader.waitForExistence(timeout: 5))
+    }
+    
+    @MainActor
+    func testAddRecipeSheetOpens() {
+        let app = XCUIApplication()
+        app.activate()
+        app/*@START_MENU_TOKEN@*/.buttons["Add Recipe"]/*[[".navigationBars.buttons[\"Add Recipe\"]",".buttons[\"Add Recipe\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.firstMatch.tap()
+        
+        let addRecipeHeader = app.staticTexts["Recipe Info"]
+        XCTAssertTrue(addRecipeHeader.waitForExistence(timeout: 5))
+    }
 }
