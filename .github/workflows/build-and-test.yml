@@ -24,10 +24,6 @@ jobs:
         key: ${{ runner.os }}-xcode-${{ hashFiles('**/*.pbxproj', '**/*.swift') }}
         restore-keys: |
           ${{ runner.os }}-xcode-
-          
-    # Show list of available simulators
-    - name: List available simulators
-    run: xcrun simctl list devices available
 
     # Select Xcode version (optional but recommended for consistency)
     - name: Select Xcode version
